@@ -28,14 +28,15 @@ elif new_status == '3':
     print ('Статус заметки успешно обновлён на: "отложено"')
 #обрабатывается некорректный ввод
 else:
-    print ("Повторите выбор статуса")
-    new_status = input ("Выберите новый статус заметки: ")
-    if new_status == "1":
-        status = new_status
-        print('Статус заметки успешно обновлён на: "выполнено"')
-    elif new_status == '2':
-        status = new_status
-        print('Статус заметки успешно обновлён на: "в процессе"')
-    elif new_status == '3':
-        status = new_status
-        print('Статус заметки успешно обновлён на: "отложено"')
+    for j in range (100):
+        print ("Повторите выбор статуса")
+        new_status = input ("Выберите новый статус заметки: ")
+        if new_status == "1":
+            status = new_status
+            print('Статус заметки успешно обновлён на: "выполнено"')
+        elif new_status == '2':
+            status = new_status
+            print('Статус заметки успешно обновлён на: "в процессе"')
+        elif new_status == '3':
+            status = new_status
+            print('Статус заметки успешно обновлён на: "отложено"')
